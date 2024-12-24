@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets\style.css">
+    <title>Home Page</title>
+    <link rel="icon" type="image/x-icon" href="assets\image\logo.png">
+  </head>
+  <body>
+    <!-- Header Nav Bar start -->
+    <header class="">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets\image\logo.png">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="mynavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item ms-auto my_dropdown_item">
+                            <a class="nav-link" href="javascript:void(0)">Blog</a>
+                            <div class="mydropdown mt-3">
+                                <ul class="list-unstyled bg-light border-1 py-2 ps-3 pe-5">
+                                    <li><a href="#" class="text-decoration-none text-muted">Blog-1</a></li>
+                                    <li><a href="#" class="text-decoration-none text-muted">Blog-2</a></li>
+                                    <li><a href="#" class="text-decoration-none text-muted">Blog-3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="contact.html">Contact US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </nav>
+    </header>
+    <!-- Header Nav Bar End -->
+
+    <main><!--Main Sectiobn is Here-->
+        <!--Banner Section Start-->
+        <section class="banner_section">
+            <div class="container">
+                <div class="row pb-5">
+                    <div class="col">
+                        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" data-bs-pause="hover">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets\image\banner.jpg" class="w-100" alt="banner">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets\image\banner1.jpg" class="w-100" alt="banner">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets\image\banner2.jpg" class="w-100" alt="banner">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets\image\banner3.jpg" class="w-100" alt="banner">
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Banner Section End-->
+
+        <!--Gallary Sectio Start-->
+        <section class="gallery_section">
+            <div class="container">
+                <h1 class="text-center text-muted bg-light py-3">Food Gallery</h1>
+                    <!-- NAV & TAb start -->
+                         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="all_pic_tab" data-bs-toggle="pill" data-bs-target="#all_pic" type="button" role="tab" aria-controls="all_pic" aria-selected="true">ALL</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="desert_pic_tab" data-bs-toggle="pill" data-bs-target="#desert_pic" type="button" role="tab" aria-controls="desert_pic" aria-selected="false">DESERT MENU</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">MEET MENU</button>
+                              </li>
+                         </ul>
+                        <!-- NAV & TAb start -->
+                        <div class="tab-content" id="pills-tabContent">
+                            <!-- all tab start -->
+                            <div class="tab-pane fade show active" id="all_pic" role="tabpanel" aria-labelledby="all_pic_tab">
+                                <section class="gallery_section">
+                                    <div class="container">
+                                        <div class="row">
+                                                <div class="col-sm-6 col-md-4 py-4">
+                                                    <div class="gallery_body">
+                                                        <div class="food_img">
+                                                            <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food1.jpg" alt="food1">
+                                                        </div>
+                                                        <figure class="figure">
+                                                            <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                          </figure>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="col-sm-6 col-md-4 py-4">
+                                                    <div class="gallery_body">
+                                                        <div class="food_img">
+                                                            <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food2.jpg" alt="food1">
+                                                        </div>
+                                                        <figure class="figure">
+                                                            <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                          </figure>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="col-sm-6 col-md-4 py-4">
+                                                    <div class="gallery_body">
+                                                        <div class="food_img">
+                                                            <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food3.jpg" alt="food1">
+                                                        </div>
+                                                        <figure class="figure">
+                                                            <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                          </figure>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="col-sm-6 col-md-4 py-4">
+                                                    <div class="gallery_body">
+                                                        <div class="food_img">
+                                                            <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food4.jpg" alt="food1">
+                                                        </div>
+                                                        <figure class="figure">
+                                                            <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                          </figure>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="col-sm-6 col-md-4 py-4">
+                                                    <div class="gallery_body">
+                                                        <div class="food_img">
+                                                            <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food5.jpg" alt="food1">
+                                                        </div>
+                                                        <figure class="figure">
+                                                            <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                          </figure>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="col-sm-6 col-md-4 py-4">
+                                                    <div class="gallery_body">
+                                                        <div class="food_img">
+                                                            <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food6.jpg" alt="food1">
+                                                        </div>
+                                                        <figure class="figure">
+                                                            <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                          </figure>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="col-sm-6 col-md-4 py-4">
+                                                    <div class="gallery_body">
+                                                        <div class="food_img">
+                                                            <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food7.jpg" alt="food1">
+                                                        </div>
+                                                        <figure class="figure">
+                                                            <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                          </figure>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="col-sm-6 col-md-4 py-4">
+                                                    <div class="gallery_body">
+                                                        <div class="food_img">
+                                                            <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food8.jpg" alt="food1">
+                                                        </div>
+                                                        <figure class="figure">
+                                                            <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                          </figure>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="col-sm-6 col-md-4 py-4">
+                                                    <div class="gallery_body">
+                                                        <div class="food_img">
+                                                            <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food9.jpg" alt="food1">
+                                                        </div>
+                                                        <figure class="figure">
+                                                            <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                          </figure>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="col-sm-6 col-md-4 py-4">
+                                                    <div class="gallery_body">
+                                                        <div class="food_img">
+                                                            <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food10.jpg" alt="food1">
+                                                        </div>
+                                                        <figure class="figure">
+                                                            <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                          </figure>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="col-sm-6 col-md-4 py-4">
+                                                    <div class="gallery_body">
+                                                        <div class="food_img">
+                                                            <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food11.jpg" alt="food1">
+                                                        </div>
+                                                        <figure class="figure">
+                                                            <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                          </figure>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="col-sm-6 col-md-4 py-4">
+                                                    <div class="gallery_body">
+                                                        <div class="food_img">
+                                                            <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food12.jpg" alt="food1">
+                                                        </div>
+                                                        <figure class="figure">
+                                                            <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                          </figure>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <!-- all tab end -->
+                            <!-- desert tab start -->
+                            <div class="tab-pane fade" id="desert_pic" role="tabpanel" aria-labelledby="desert_pic_tab">
+                            <section class="gallery_section">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-4 py-4">
+                                            <div class="gallery_body">
+                                                <div class="food_img">
+                                                    <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food1.jpg" alt="food1">
+                                                </div>
+                                                <figure class="figure">
+                                                    <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                  </figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 py-4">
+                                            <div class="gallery_body">
+                                                <div class="food_img">
+                                                    <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food2.jpg" alt="food1">
+                                                </div>
+                                                <figure class="figure">
+                                                    <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                  </figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 py-4">
+                                            <div class="gallery_body">
+                                                <div class="food_img">
+                                                    <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food8.jpg" alt="food1">
+                                                </div>
+                                                <figure class="figure">
+                                                    <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                  </figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 py-4">
+                                            <div class="gallery_body">
+                                                <div class="food_img">
+                                                    <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food10.jpg" alt="food1">
+                                                </div>
+                                                <figure class="figure">
+                                                    <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                  </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            </div>
+                            <!-- desert tab end -->
+                            <!-- Meet menu start -->
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                <section class="gallery_section">
+                                    <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-4 py-4">
+                                            <div class="gallery_body">
+                                                <div class="food_img">
+                                                    <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food3.jpg" alt="food1">
+                                                </div>
+                                                <figure class="figure">
+                                                    <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                  </figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 py-4">
+                                            <div class="gallery_body">
+                                                <div class="food_img">
+                                                    <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food4.jpg" alt="food1">
+                                                </div>
+                                                <figure class="figure">
+                                                    <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                  </figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 py-4">
+                                            <div class="gallery_body">
+                                                <div class="food_img">
+                                                    <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food5.jpg" alt="food1">
+                                                </div>
+                                                <figure class="figure">
+                                                    <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                  </figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 py-4">
+                                            <div class="gallery_body">
+                                                <div class="food_img">
+                                                    <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food6.jpg" alt="food1">
+                                                </div>
+                                                <figure class="figure">
+                                                    <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                  </figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 py-4">
+                                            <div class="gallery_body">
+                                                <div class="food_img">
+                                                    <img class="w-100 border border-2 border-info rounded-2" src="assets\image\food7.jpg" alt="food1">
+                                                </div>
+                                                <figure class="figure">
+                                                    <figcaption class="figure-caption">Delicious Food</figcaption>
+                                                  </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <!-- Meet Menu End -->
+                        </div>
+                        <!-- NAV & TAb end -->
+            </div>
+        </section>
+        <!--Gallary Sectio End-->
+
+        <!--Employee Card Section Start-->
+        <section class="employee_section  pt-5" >
+            <div class="container">
+                <h1 class="text-center text-muted bg-light py-3">Employee Card Section</h1>
+                <div class="employee_wrap py-5">  
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="emp_card">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <div class="emp_img">
+                                            <img src="assets\image\profile (1).png" class="w-100 h-auto">
+                                        </div>
+                                    </div>
+                                    <div class="card-title">
+                                        <h5 class="py-2 px-2">Mr.Rahim</h5>
+                                    </div>
+                                    <div class="card-text py-2 px-2">
+                                        <P>Hey!He is a software Developer.NOw he is trying to best.He is a software Developer.NOw he is trying to best.</P>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button type="button" class="btn btn-primary">SEE MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="emp_card">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <div class="emp_img">
+                                            <img src="assets\image\profile (2).png" class="w-100 h-auto">
+                                        </div>
+                                    </div>
+                                    <div class="card-title">
+                                        <h5 class="py-2 px-2">Mr.Rahim</h5>
+                                    </div>
+                                    <div class="card-text py-2 px-2">
+                                        <P>Hey!He is a software Developer.NOw he is trying to best.He is a software Developer.NOw he is trying to best.</P>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button type="button" class="btn btn-primary">SEE MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="emp_card">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <div class="emp_img">
+                                            <img src="assets\image\profile (3).png" class="w-100 h-auto">
+                                        </div>
+                                    </div>
+                                    <div class="card-title">
+                                        <h5 class="py-2 px-2">Mr.Rahim</h5>
+                                    </div>
+                                    <div class="card-text py-2 px-2">
+                                        <P>Hey!He is a software Developer.NOw he is trying to best.He is a software Developer.NOw he is trying to best.</P>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button type="button" class="btn btn-primary">SEE MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="emp_card">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <div class="emp_img">
+                                            <img src="assets\image\profile (4).png" class="w-100 h-auto">
+                                        </div>
+                                    </div>
+                                    <div class="card-title">
+                                        <h5 class="py-2 px-2">Mr.Rahim</h5>
+                                    </div>
+                                    <div class="card-text py-2 px-2">
+                                        <P>Hey!He is a software Developer.NOw he is trying to best.He is a software Developer.NOw he is trying to best.</P>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button type="button" class="btn btn-primary">SEE MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Employee Card Section End--> 
+       
+        <!-- Footer Section Start -->
+         <footer class="col">
+            <p class="bg-info text-white-50 text-center py-3">&copy;Copy Rights Reserved By: <span class="text-warning">SWAPNOSHI SIKDER/WDDF-L-3-04-05</span></p>
+         </footer>
+        <!-- Footer Section End -->
+    </main>
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

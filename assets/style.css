@@ -1,0 +1,73 @@
+/* index CSS */
+.employee_section .emp_card .emp_img{
+    overflow: hidden;
+}
+.employee_section .employee_wrap img{
+    transition: .1s;
+    
+}
+.employee_section .employee_wrap img:hover{
+    transform: scale(1.1);
+}
+.employee_section .emp_card  p{
+    text-align: justify;
+}
+header .mydropdown {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: 0.7s;
+    z-index: 99;
+}
+header .mydropdown:hover li{
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: 0.7s;
+    padding: 10px 0px;
+}
+header .my_dropdown_item:hover .mydropdown{
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}
+header .my_dropdown_item:hover .mydropdown  li{
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}
+.gallery_section .gallery_body .food_img{
+    overflow: hidden;
+    
+}
+.gallery_section .gallery_body .food_img img{
+    transition: .7s;
+}
+.gallery_section .gallery_body .food_img img:hover{
+    transform: scale(1.1);
+}
+
+/* conatact CSS */
+.banner_section .container h1{
+    padding-top: 50px;
+}
+
+.contact_section .contact_form .form-control:focus {
+   box-shadow:none;
+}
+.contact_section .contact_form .form-control input:focus {
+  
+}
+.contact_section .contact_form .btn-info:focus {
+    border-color: none;
+    box-shadow: none;
+}
+.contact_section .contact_form .btn:focus {
+    box-shadow: none;
+}
+
+/* about CSS */
+.accordian_section .faq_wrap .accordion-button:focus {
+    box-shadow:none;
+}
